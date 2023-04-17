@@ -1,0 +1,17 @@
+{
+  "name": "tail-hunter",
+  "version": "1.0.0",
+  "description": "Resume Application",
+  "main": "index.js",
+  "repository": "https://github.com/LordCracken/tail-hunter",
+  "author": "LordCracken <vladislav070201@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3",
+    "webpack-notifier": "^1.15.0"
+  }
+}
