@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --mode development",
+    "serve": "webpack serve --open --mode development",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix ./**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc"
