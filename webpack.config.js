@@ -23,4 +23,12 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'index.[contenthash].js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+    ],
+  },
 };

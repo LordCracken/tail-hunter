@@ -1,3 +1,5 @@
+import './style.scss';
+
 const heading = document.createElement('h1');
 heading.textContent = 'Tail Hunter';
 
