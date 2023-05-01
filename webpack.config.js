@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   plugins: [
@@ -13,6 +14,7 @@ module.exports = {
         onStart: { delete: ['build'] },
       },
     }),
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
@@ -27,7 +29,7 @@ module.exports = {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },
