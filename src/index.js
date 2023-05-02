@@ -1,6 +1,8 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+import App from './App';
 import './style.scss';
 
-const heading = document.createElement('h1');
-heading.textContent = 'Tail Hunter';
-
-document.body.prepend(heading);
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
