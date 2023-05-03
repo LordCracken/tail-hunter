@@ -1,3 +1,37 @@
-h1 {
-  color: #f00;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.header {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-container {
+  margin-right: 15px;
+  max-width: 50px;
+
+  img {
+    width: 100%;
+  }
 }

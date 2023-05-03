@@ -1,13 +1,8 @@
 import React from 'react';
-import logo from './images/logo.png';
+import Header from './components/Header';
 
 const App = () => {
-  return (
-    <>
-      <img src={logo} alt="TailHunter logo" />
-      <h1>Tail Hunter</h1>
-    </>
-  );
+  return <Header />;
 };
 
 export default App;
