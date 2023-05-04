@@ -19,11 +19,13 @@ module.exports = {
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
     port: 9000,
+    historyApiFallback: true,
   },
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'index.[contenthash].js',
+    publicPath: '/',
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
   module: {
