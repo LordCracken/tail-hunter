@@ -3,7 +3,7 @@ import Logo from './Logo';
 import Container from './Container';
 
 const Header = () => (
-  <header className='header'>
+  <header className="header">
     <Container className="header-content">
       <Logo />
       <h1>Tail Hunter</h1>
