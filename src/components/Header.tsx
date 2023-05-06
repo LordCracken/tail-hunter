@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from './Logo';
 import Container from './Container';
 
-const Header = () => (
+const Header: React.FC = () => (
   <header className="header">
     <Container className="header-content">
       <Logo />

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.png';
 
-const Logo = () => (
+const Logo: React.FC = () => (
   <div className="logo-container">
     <img src={logo} alt="TailHunter logo" />
   </div>
