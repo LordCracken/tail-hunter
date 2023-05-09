@@ -49,7 +49,18 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1, modules: true } },
+          'postcss-loader',
+          'sass-loader',
+        ],
+        include: /\.module\.(css|scss)$/,
+      },
+      {
+        test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        exclude: /\.module\.(css|scss)$/,
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
