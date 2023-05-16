@@ -6,9 +6,11 @@
   "repository": "https://github.com/LordCracken/tail-hunter",
   "author": "LordCracken <vladislav070201@gmail.com>",
   "license": "MIT",
+  "homepage": ".",
   "scripts": {
-    "dev": "vite --mode development",
-    "build": "vite --mode production",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix ./src/**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc"
